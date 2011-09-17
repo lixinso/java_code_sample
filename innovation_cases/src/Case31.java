@@ -38,9 +38,7 @@ public class Case31 {
 		return cards;
 	}
 
-	
-	
-	
+
 	
 	/**
 	 * @param args
