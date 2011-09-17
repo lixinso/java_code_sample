@@ -8,6 +8,7 @@ public class Case31 {
  	
 	Random randomSeed;
 	
+	/*初始化一个有序的输入*/
 	int[] initCards(){
 		int [] cards = new int[TOTAL_CARD];	
 		randomSeed = new Random();
@@ -17,6 +18,7 @@ public class Case31 {
 		return cards;
 	}
 	
+	/*排序*/
 	int[] shuffle(int[] cards){
 		/*洗牌SHUFFLE_TIMES次*/
 		for(int i = 0 ; i < SHUFFLE_TIMES; i++){
@@ -44,9 +46,11 @@ public class Case31 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
 		Case31 case31 = new Case31();
 		int[] cards = case31.initCards();
 		int[] shuffledCards = case31.shuffle(cards);
+		
 		for(int i = 0 ; i < shuffledCards.length; i++){
 			System.out.print(shuffledCards[i] + " ");
 		}
